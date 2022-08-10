@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/background_blue.xml" value="0.1" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/background_light_blue.xml" value="0.135" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/button_background_grey.xml" value="0.135" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/ic_profile.xml" value="0.1505" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/qr_code_reader_square.xml" value="0.1505" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_blank.xml" value="0.27447916666666666" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_client_calls.xml" value="0.27447916666666666" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_profile.xml" value="0.152" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_scanner.xml" value="0.136" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/item_client_call_view.xml" value="0.27447916666666666" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/item_client_view.xml" value="0.27447916666666666" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/item_customer_call_view.xml" value="0.21240942028985507" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/item_customer_view.xml" value="0.176" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
