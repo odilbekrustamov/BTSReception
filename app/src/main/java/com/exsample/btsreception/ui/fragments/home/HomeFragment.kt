@@ -43,6 +43,7 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
         viewModel.insertClientNumberToDB(ClientList("+998901185446"))
         viewModel.insertClientNumberToDB(ClientList("+998977751779"))
         viewModel.insertClientNumberToDB(ClientList("+998900429775"))
+        viewModel.insertClientNumberToDB(ClientList("+998915085515"))
     }
 
     private fun initViews() {
@@ -51,8 +52,6 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
 
                 val dialog = CallDialog(object : OnClickEvent{
                     override fun setOnCallClickListener(number: String) {
-//                        val intentDial = Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number))
-//                        context!!.startActivity(intentDial)
 
                         val callIntent = Intent(Intent.ACTION_CALL)
                         callIntent.data = Uri.parse("tel:" + number)

@@ -82,7 +82,7 @@ class PhonecallReceiver : BroadcastReceiver() {
                                     number = savedNumber!!, timeSpent = dateBetween(Date(), callStartTime!!),
                                     callType = MISSED, isSent = false)
 
-                                    mainRepository.insertCallNumberToDB(callNumber)
+                                mainRepository.insertCallNumberToDB(callNumber)
                             }
                         }
                     } else if (isIncoming) {
@@ -112,8 +112,6 @@ class PhonecallReceiver : BroadcastReceiver() {
                                     callType = OUTGOING, isSent = false)
 
                                 mainRepository.insertCallNumberToDB(callNumber)
-
-
                             }
                         }
                     }

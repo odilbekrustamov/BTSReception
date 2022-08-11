@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 
     <application
         android:name=".BTSApp"
@@ -22,7 +22,8 @@
         android:theme="@style/Theme.BTSReception">
         <activity
             android:name=".ui.activity.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
