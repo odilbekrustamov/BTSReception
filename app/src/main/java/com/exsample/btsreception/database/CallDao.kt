@@ -22,6 +22,6 @@ interface CallDao {
     @Query("SELECT * FROM clint_table")
     suspend fun getClients(): List<ClientList>
 
-    @Query("SELECT * FROM clint_table WHERE number = :number")
-    suspend fun getClientNumber(number: String): ClientList
+    @Query("SELECT EXISTS(SELECT * FROM clint_table WHERE number = :number)")
+    suspend fun getClientNumber(number: String): Boolean
 }

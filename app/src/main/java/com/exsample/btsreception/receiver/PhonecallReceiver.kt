@@ -77,7 +77,7 @@ class PhonecallReceiver : BroadcastReceiver() {
                         CoroutineScope(Dispatchers.IO).launch {
                             Log.d("TAG", "onCallStateChanged: ${mainRepository.getClientNumber(savedNumber!!)}")
 
-                            if (mainRepository.getClientNumber(savedNumber!!) != null){
+                            if (mainRepository.getClientNumber(savedNumber!!)){
                                 val callNumber = CallNumber(callTime = dateConvert(callStartTime!!),
                                     number = savedNumber!!, timeSpent = dateBetween(Date(), callStartTime!!),
                                     callType = MISSED, isSent = false)
@@ -85,29 +85,27 @@ class PhonecallReceiver : BroadcastReceiver() {
                                     mainRepository.insertCallNumberToDB(callNumber)
                             }
                         }
-
                     } else if (isIncoming) {
                         Log.d("TAG", "onCallStateChanged  onIncomingCallEnded: $savedNumber   $callStartTime ${Date()}")
 
                         CoroutineScope(Dispatchers.IO).launch {
-                            Log.d("TAG", "onCallStateChanged: ${mainRepository.getClientNumber(savedNumber!!)}")
-
-                            if (mainRepository.getClientNumber(savedNumber!!) != null){
+                            Log.d("TAG", "onCallStateChanged SDSD: ${mainRepository.getClientNumber(savedNumber!!)}")
+                            if (mainRepository.getClientNumber(savedNumber!!)){
 
                                 val callNumber = CallNumber(callTime = dateConvert(callStartTime!!),
                                     number = savedNumber!!, timeSpent = dateBetween(Date(), callStartTime!!),
                                     callType = INCOMING, isSent = false)
-
-                                    mainRepository.insertCallNumberToDB(callNumber)
+                                mainRepository.insertCallNumberToDB(callNumber)
                             }
                         }
                     } else {
                         Log.d("TAG", "onCallStateChanged  onOutgoingCallEnded: $savedNumber   $callStartTime  ${Date()}")
 
+
                         CoroutineScope(Dispatchers.IO).launch {
                             Log.d("TAG", "onCallStateChanged: ${mainRepository.getClientNumber(savedNumber!!)}")
 
-                            if (mainRepository.getClientNumber(savedNumber!!) != null){
+                            if (mainRepository.getClientNumber(savedNumber!!)){
                                 Log.d("TAG", "onCallStateChanged: ")
                                 val callNumber = CallNumber(callTime = dateConvert(callStartTime!!),
                                     number = savedNumber!!, timeSpent = dateBetween(Date(), callStartTime!!),

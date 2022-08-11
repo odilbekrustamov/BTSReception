@@ -72,5 +72,5 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
 
-
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
 }

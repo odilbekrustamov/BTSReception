@@ -7,7 +7,8 @@ import java.util.*
 
 @Entity(tableName = "call_table")
 data class CallNumber (
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id") val id:Int? = null,
     @ColumnInfo(name = "call_time") val callTime: String,
     @ColumnInfo(name = "number") val number: String,
     @ColumnInfo(name = "time_spent") val timeSpent: String,

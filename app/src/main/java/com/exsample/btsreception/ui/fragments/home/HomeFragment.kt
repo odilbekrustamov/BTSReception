@@ -11,9 +11,11 @@ import androidx.navigation.fragment.findNavController
 import com.exsample.btsreception.R
 import com.exsample.btsreception.adapter.ClientAdapter
 import com.exsample.btsreception.databinding.FragmentHomeBinding
+import com.exsample.btsreception.helper.OnClickEvent
 import com.exsample.btsreception.helper.OnItemClickEvent
 import com.exsample.btsreception.model.ClientList
 import com.exsample.btsreception.ui.fragments.BaseFragment
+import com.exsample.btsreception.utils.CallDialog
 import com.exsample.btsreception.utils.KeyValues.NUMBER
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,15 +39,33 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
     private fun insertClientNumbers() {
 
         viewModel.insertClientNumberToDB(ClientList("973870910"))
-        viewModel.insertClientNumberToDB(ClientList("+998973870912"))
         viewModel.insertClientNumberToDB(ClientList("+998914690811"))
+        viewModel.insertClientNumberToDB(ClientList("+998901185446"))
+        viewModel.insertClientNumberToDB(ClientList("+998977751779"))
+        viewModel.insertClientNumberToDB(ClientList("+998900429775"))
     }
 
     private fun initViews() {
         adapter = ClientAdapter(object : OnItemClickEvent{
             override fun setOnCallClickListener(number: String) {
-                val intentDial = Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number))
-                context!!.startActivity(intentDial)
+
+                val dialog = CallDialog(object : OnClickEvent{
+                    override fun setOnCallClickListener(number: String) {
+//                        val intentDial = Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number))
+//                        context!!.startActivity(intentDial)
+
+                        val callIntent = Intent(Intent.ACTION_CALL)
+                        callIntent.data = Uri.parse("tel:" + number)
+                        callIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        context!!.startActivity(callIntent)
+                    }
+
+                    override fun setOnNotCallClickListener() {
+
+                    }
+
+                })
+                dialog.showCalendarDialog(requireActivity(), number, "Odilbek")
             }
 
             override fun setOnOpenFragmentClickListener(number: String) {
