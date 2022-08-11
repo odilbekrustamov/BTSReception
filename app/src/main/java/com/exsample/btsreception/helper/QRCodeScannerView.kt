@@ -1,15 +1,16 @@
 package com.exsample.btsreception.helper
 
 import android.content.Context
-import android.content.res.Resources
 import android.graphics.*
 import android.graphics.drawable.Drawable
+import android.opengl.ETC1.getHeight
+import android.opengl.ETC1.getWidth
 import android.os.Build
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import androidx.annotation.RequiresApi
 import com.exsample.btsreception.R
+
 
 class QRCodeScannerView : View {
     private var mPaint: Paint? = null
@@ -46,7 +47,6 @@ class QRCodeScannerView : View {
         super.onDraw(canvas)
         pTopLeft.x = getWidth() / 13 + 10
         pTopLeft.y = getHeight() / 4 + 20
-
         pBotRight.x = getWidth() - pTopLeft.x - 10
         pBotRight.y = getHeight() - pTopLeft.y - 20
         mPaint!!.setColor(Color.parseColor("#77000000"))
@@ -69,14 +69,6 @@ class QRCodeScannerView : View {
         //Draw Outer Line drawable
         val d: Drawable = getResources().getDrawable(R.drawable.scanner_outline, null)
         d.setBounds(pTopLeft.x, pTopLeft.y, pBotRight.x, pBotRight.y)
-
-        Log.d("TAG", "onDraw: ${pTopLeft.x}")
-        Log.d("TAG", "onDraw: ${pTopLeft.y}")
-
-        Log.d("TAG", "onDraw: ${pBotRight.x}")
-        Log.d("TAG", "onDraw: ${pBotRight.y}")
-        Log.d("TAG", "onDraw: ${( pTopLeft.x/ Resources.getSystem().getDisplayMetrics().density)}")
-        Log.d("TAG", "onDraw: ${( pTopLeft.y/ Resources.getSystem().getDisplayMetrics().density)}")
         d.draw(canvas)
     }
 }

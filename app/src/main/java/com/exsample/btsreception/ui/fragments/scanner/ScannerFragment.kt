@@ -1,6 +1,7 @@
 package com.exsample.btsreception.ui.fragments.scanner
 
 import android.annotation.SuppressLint
+import android.hardware.Camera
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -18,14 +19,16 @@ import com.google.android.gms.vision.Detector
 import com.google.android.gms.vision.barcode.Barcode
 import com.google.android.gms.vision.barcode.BarcodeDetector
 
-
 class ScannerFragment : BaseFragment(R.layout.fragment_scanner) {
     private lateinit var binding: FragmentScannerBinding
     private lateinit var cameraSource: CameraSource
     private lateinit var barcodeDetector: BarcodeDetector
+    private lateinit var camera: Camera
     private var scannedValue = ""
     private var valueType = 0
     private var isFlashOff = false
+
+
 
     @SuppressLint("MissingPermission")
     override fun onCreateView(
@@ -45,6 +48,7 @@ class ScannerFragment : BaseFragment(R.layout.fragment_scanner) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        camera = Camera.open()
         initViews()
     }
 
@@ -61,7 +65,6 @@ class ScannerFragment : BaseFragment(R.layout.fragment_scanner) {
             }
         }
     }
-
 
     private fun setupControls(){
         barcodeDetector =
