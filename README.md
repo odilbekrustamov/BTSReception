@@ -1,5 +1,8 @@
 # BTSReception
-#Bu app da reception dan chiqgan va kelgan qo'ng'iroqlar vaqti saqlanadi, mahsulot bar code orqali mahsulot egalari telefon nomerlari olinadi va qo'ng'iroq qilinadi.
+Bu app da reception dan chiqgan va kelgan qo'ng'iroqlar vaqti saqlanadi, mahsulot bar code orqali mahsulot egalari telefon nomerlari olinadi va qo'ng'iroq qilinadi.
+
+
+
 <img align=left width=250 height=550 src="https://user-images.githubusercontent.com/106246180/185848192-3b84abca-5f1b-4ba8-9552-9c174fe9fc82.jpg"/>
 <img align=left width=250 height=550 src="https://user-images.githubusercontent.com/106246180/185848283-b7835244-9653-462c-b379-c4007f47dc2e.jpg"/>
 <img align=left width=250 height=550 src="https://user-images.githubusercontent.com/106246180/185848337-0ab600a6-2950-42ac-bc34-eacb56522c03.jpg"/>
