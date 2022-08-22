@@ -70,6 +70,8 @@ class PhonecallReceiver : BroadcastReceiver() {
                         callStartTime = Date()
                         Log.d("TAG", "onCallStateChanged  onOutgoingCallStarted: $savedNumber   $callStartTime")
                     }
+
+
                 TelephonyManager.CALL_STATE_IDLE ->
                     if (lastState == TelephonyManager.CALL_STATE_RINGING) {
                         Log.d("TAG", "onCallStateChanged  onMissedCall: $savedNumber   $callStartTime  ${Date()}")
@@ -100,7 +102,6 @@ class PhonecallReceiver : BroadcastReceiver() {
                         }
                     } else {
                         Log.d("TAG", "onCallStateChanged  onOutgoingCallEnded: $savedNumber   $callStartTime  ${Date()}")
-
 
                         CoroutineScope(Dispatchers.IO).launch {
                             Log.d("TAG", "onCallStateChanged: ${mainRepository.getClientNumber(savedNumber!!)}")

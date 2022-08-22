@@ -1,11 +1,12 @@
 package com.exsample.btsreception.repository
 
 import com.exsample.btsreception.model.ClientList
+import com.exsample.btsreception.networking.UserServer
 import com.exsample.readnumbercall.database.CallDao
 import com.exsample.readnumbercall.model.CallNumber
 import javax.inject.Inject
 
-class MainRepository @Inject constructor(private val callDao: CallDao) {
+class MainRepository @Inject constructor(private val callDao: CallDao, private val server: UserServer) {
 
     /**
      * Room

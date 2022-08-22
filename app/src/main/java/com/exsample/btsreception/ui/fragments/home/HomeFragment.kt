@@ -38,12 +38,8 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
 
     private fun insertClientNumbers() {
 
-        viewModel.insertClientNumberToDB(ClientList("973870910"))
-        viewModel.insertClientNumberToDB(ClientList("+998914690811"))
-        viewModel.insertClientNumberToDB(ClientList("+998901185446"))
         viewModel.insertClientNumberToDB(ClientList("+998977751779"))
-        viewModel.insertClientNumberToDB(ClientList("+998900429775"))
-        viewModel.insertClientNumberToDB(ClientList("+998915085515"))
+        viewModel.insertClientNumberToDB(ClientList("+998917751779"))
     }
 
     private fun initViews() {
@@ -78,10 +74,6 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
             findNavController().navigate(R.id.action_homeFragment_to_scannerFragment)
         }
 
-        binding.ivProfile.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
-        }
-
         viewModel.getClient()
 
         initObserves()
@@ -93,6 +85,4 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
             binding.recyclerView.adapter = adapter
         })
     }
-
-
 }

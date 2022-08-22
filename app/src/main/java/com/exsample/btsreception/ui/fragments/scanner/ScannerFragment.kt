@@ -25,7 +25,6 @@ import com.google.android.gms.vision.barcode.Barcode
 import com.google.android.gms.vision.barcode.BarcodeDetector
 import java.lang.reflect.Field
 
-
 class ScannerFragment : BaseFragment(R.layout.fragment_scanner) {
     private lateinit var binding: FragmentScannerBinding
     private lateinit var cameraSource: CameraSource
@@ -234,6 +233,4 @@ class ScannerFragment : BaseFragment(R.layout.fragment_scanner) {
         super.onDestroy()
         cameraSource.stop()
     }
-
-
 }

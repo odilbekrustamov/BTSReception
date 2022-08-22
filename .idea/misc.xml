@@ -4,14 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/background_white_line.xml" value="0.15" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/ic_barcode_scanner.xml" value="0.153" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/ic_baseline_visibility_off_24.xml" value="0.153" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/ic_flashlight_off_balue.xml" value="0.141" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/ic_flashlight_turned_blue.xml" value="0.141" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/ic_search.xml" value="0.153" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/logo_bts.xml" value="0.153" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable-v24/scanner_outline.xml" value="0.15" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/background_blue.xml" value="0.1" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/background_light_blue.xml" value="0.135" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/background_login.xml" value="0.153" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/button_background_grey.xml" value="0.135" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/circular_tick.xml" value="0.1505" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/ic_profile.xml" value="0.1505" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/ic_scanner.xml" value="0.153" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/ic_search.xml" value="0.153" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/ic_search_svgrepo_com.xml" value="0.153" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/qr_code_reader_square.xml" value="0.1505" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/drawable/tick_green.xml" value="0.1505" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/activity_main.xml" value="0.152" />
@@ -19,8 +27,10 @@
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_blank.xml" value="0.27447916666666666" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_client_calls.xml" value="0.27447916666666666" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_profile.xml" value="0.152" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_scanner.xml" value="0.264" />
+        <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/fragment_user.xml" value="0.136" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/item_client_call_view.xml" value="0.27447916666666666" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/item_client_view.xml" value="0.27447916666666666" />
         <entry key="..\:/BTS/1 Sinov/BTS Reception/app/src/main/res/layout/item_customer_call_view.xml" value="0.21240942028985507" />
